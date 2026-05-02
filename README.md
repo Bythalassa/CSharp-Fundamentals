@@ -1,8 +1,6 @@
 # 🎮 C# Fundamentals — Learning Repository
 
-This repository contains my learning materials and practice projects from
-
-**_“the Programming C# Fundamentals course from TECSUP (Lima,Perú).”_**.
+This repository contains my learning materials and practice projects from **_“the Programming C# Fundamentals course from TECSUP (Lima,Perú).”_**.
 
 ## 🛠️ Technologies & Tools
 
