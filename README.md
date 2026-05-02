@@ -4,11 +4,11 @@ This repository contains my learning materials and practice projects from **_“
 
 ## 🛠️ Technologies & Tools
 
-- **Python 3.12.9** — Primary programming language
-- **pyenv** — Python version management
+- **Unity Engine** - Game Development Engine
+- **Unity version 6000.3.9f1**
+- **Unity version 6000.4.2f1**
+- **VS CODE** - Development environment
 - **Git & GitHub** — Version control
-- **VS Code** — Development environment
-- **JupyterLab** — Interactive notebooks for learning
 
 ## 📌 Features
 
