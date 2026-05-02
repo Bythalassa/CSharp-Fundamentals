@@ -24,7 +24,7 @@ CSharp-Fundamentals/
 ├── week3/ExerciseThree   # Data Types and Operators
 ├── week3/ExerciseFour    # Data Types and Operators
 ├── week4/ 
-├── week4/Algorythms1/ExerciseOne/A    # Simple Hardcodded Algorythms without external dependencies 
+├── week4/Algorythms1/ExerciseOne      # Simple Hardcodded Algorythms without external dependencies 
 ├── week4/Algorythms1/ExerciseTwo      # Simple Hardcodded Algorythms without external dependencies 
 ├── week4/Algorythms1/ExerciseThree    # Simple Hardcodded Algorythms without external dependencies 
 ├── week4/Algorythms2/RemakeGameTimer  # Simple Hardcodded Algorythm, external dependencies(1)
