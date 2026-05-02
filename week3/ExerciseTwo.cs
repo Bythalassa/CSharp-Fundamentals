@@ -1,9 +1,34 @@
 using System;
+using UnityEngine;
 
-class Program
+public class ExerciseTwo : MonoBehaviour
 {
-    static void Main()
+    //Level Verification
+
+    int myLevel = 2;
+    int requiredLevel = 3;
+    bool positiveAcess = false;
+
+    // Mensaje de Unity | 0 referencias
+    void Start()
     {
-        // TODO: Implement ExerciseTwo
+        positiveAcess = myLevel >= requiredLevel;
+
+        Debug.Log(positiveAcess);
+        print("positiveAcess");
+    }
+
+    void Update()
+    {
+
     }
 }
+
+
+
+
+
+
+
+
+

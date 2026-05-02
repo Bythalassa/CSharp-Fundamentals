@@ -1,9 +1,23 @@
 using System;
+using UnityEngine;
 
-class Program
+public class Ejercicio03 : MonoBehaviour
 {
-    static void Main()
+    //string and char concatenation
+
+    char cantidad = '2';
+    string mensaje = "Zombie Dinamita cerca";
+
+    void Start()
     {
-        // TODO: Implement ExerciseThree
+        string total = mensaje + cantidad;
+
+        Debug.Log(total);
+        print("total");
+
+    }
+    void Update()
+    {
+        
     }
 }

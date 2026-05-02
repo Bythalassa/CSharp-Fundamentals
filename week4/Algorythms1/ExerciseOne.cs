@@ -1,9 +1,24 @@
 using System;
+using Unity.VisualScripting;
+using UnityEngine;
 
-class Program
+public class ExerciseOne : MonoBehaviour
 {
-    static void Main()
+    //Energy system
+
+    int liveEnergy = 20;
+    int abilityCost = 10;
+    int totalAbility;
+
+    void Start()
     {
-        // TODO: Implement ExerciseOne
+        totalAbility = liveEnergy - abilityCost;
+        Debug.Log(totalAbility);
+    }
+
+
+    void Update()
+    {
+
     }
 }

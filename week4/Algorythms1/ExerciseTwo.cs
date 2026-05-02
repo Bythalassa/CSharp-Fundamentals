@@ -1,9 +1,28 @@
 using System;
+using UnityEngine;
 
-class Program
+public class ExerciseTwo : MonoBehaviour
 {
-    static void Main()
+    //Open Treasure chest
+    public bool hasKey;
+    public bool spaceAvailable;
+    bool validation;
+
+    void Start()
     {
-        // TODO: Implement ExerciseTwo
+
+    }
+
+    void Update()
+    {
+        if (hasKey && spaceAvailable)
+        {
+            validation = true;
+            Debug.Log("Unlocked! ");
+        }
+        else
+        {
+            Debug.Log("Access denied");
+        }
     }
 }
