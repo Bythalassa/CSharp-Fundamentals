@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 
 public class W6PracticalB3 : MonoBehaviour
 {
-    //Block 3 : Operators Management without bucles
+    //Block 3 : Operators Management without bucles --
 
     int[] numbers = new int[3];
 
