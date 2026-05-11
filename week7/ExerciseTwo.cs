@@ -41,17 +41,14 @@ public class week7Bloquedos : MonoBehaviour
 
     public void inventario()
     {
-        int i = 0;
-        while (i < inventary.Count)
         {
+            //LLAMAR AL INDICE PARA IMPRIMIRLOS A TODOS = "show inventory " + inventary[2]
             //Debug.Log( inventary[0], inventary[1], inventary[2]);
             Debug.Log(item);
             i++;
 
-        item = ?
-                : enemigo[0]
-                : enemigo[i]
-                : enemigo[i]
+
+            
 
 
             //item si el indice es 0 entonces debugeo el inventory[0], si 
