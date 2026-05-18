@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class week7Bloque1 : MonoBehaviour
 {
-    //public List<string> numbers = new List<string>() { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
+    public List<string> numbers = new List<string>() { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
     public List<string> opcion = new List<string>() { "0", "1", "2", "3", "4", "5" };
 
 
@@ -15,7 +15,7 @@ public class week7Bloque1 : MonoBehaviour
 
     }
 
-   /* public void ascendantCounter()
+    public void ascendantCounter()
     {
         int i = 0;
         while (i < numbers.Count)
@@ -29,7 +29,7 @@ public class week7Bloque1 : MonoBehaviour
                 i++;
             }
         }
-    }*/
+    }
 
     public void descendantCounter()
     {
