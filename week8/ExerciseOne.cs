@@ -4,7 +4,7 @@ using System;
 
 
 //Coffe Code
-public enum Status
+public enum Status // ENUM es un tipo de valor, que contiene variables constantes. 
 {
     None,//0
     Alive,
@@ -13,36 +13,31 @@ public enum Status
 
 //Coffe Code 
 [Serializable]
-public struct Entity
+public struct Entity // otro valor que contiene constantes campos, métodos, etc
 {
     public string EntityName;
     public Status myStatus;
 
-    public Entity(string entityName , Status status)
+    public Entity(string entityName, Status status)
     {
         EntityName = entityName;
-        this.myStatus = status;   
+        this.myStatus = status;
     }
 }
 
-public class blobk3 : MonoBehaviour
+public class W8b3 : MonoBehaviour
 {
     public List<Entity> entities = new(); //Public Personalized List (create enemies in inspector + asign the stattus)
     //lista de tipo Entity
+
     string[] keyNames = new string[5];
 
     void Start()
-
     {
         stopCriticE();
     }
 
-    void Update()
-    {
-
-
-    }
-
+    void Update(){}
 
     private void EnemiesDefeated()  //*Saltar enemigos derrotados
     {
@@ -51,10 +46,9 @@ public class blobk3 : MonoBehaviour
             if (enemy.myStatus == Status.Defeat)
                 continue;
 
-            Debug.Log(enemy.EntityName); // ← Log del enemigo actual, no de la lista
+            Debug.Log(enemy.EntityName); 
         }
     }
-
 
     private void findKey() //find the word blueKey
     {
@@ -69,28 +63,26 @@ public class blobk3 : MonoBehaviour
             if (keyName == "blueKey")
                 break;
 
-            Debug.Log(keyName); //Debugeas der i und i ist genau was du richting als name gestellt hast, dorthin. 
+            Debug.Log(keyName + "    searching ... "); 
         }
     }
 
-    //ignora numeros pares
-    private void ignoreEven()
+    private void ignoreEven()     //ignora numeros pares
+
     {
-        for (int i = 0; i <= 20; i++) //define variable - define condicion - was ist zu der variable passiert 
+        for (int i = 0; i <= 20; i++) 
             if (i % 2 == 0)
             {
                 print(i + " es par");
             }
     }
 
-    //Detener energía crítica
+    private void stopCriticE()     //Detener energía crítica
 
-    private void stopCriticE()
     {
-        for (int i = 12; i > 0; i--) 
-            if (i  == 0)
+        for (int i = 12; i >= 0; i--)
             {
-                Debug.Log(i + " Energia reducida a ");
+                print( " Energia reducida a " + i);
             }
     }
 
