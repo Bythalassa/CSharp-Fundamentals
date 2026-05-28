@@ -31,6 +31,7 @@ public class W8b3 : MonoBehaviour
     //lista de tipo Entity
 
     string[] keyNames = new string[5];
+    public List<string> Enemies= new List<string>();
 
     void Start()
     {
@@ -86,11 +87,27 @@ public class W8b3 : MonoBehaviour
             }
     }
 
-
-
-
     //Detectar jefe final
+    private void findBoss() 
+    {
+        Enemies.Add("Goblin");
+        Enemies.Add("Orc");
+        Enemies.Add("Troll");
+        Enemies.Add("Dragon");
 
+        foreach (string enemy in Enemies)
+        {
+            if (enemy == "Dragon")
+            {
+                print(enemy + " encontrado, es el jefe final!");
+                break;
+            }
+            else 
+            {
+                print(enemy + " no es el jefe final, sigue buscando...");
+            }   
+        }
+    }
 
 
 
