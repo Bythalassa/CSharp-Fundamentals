@@ -24,7 +24,6 @@ public class week7Bloque1 : MonoBehaviour
 
             if (i < numbers.Count)
             {
-                //recorre tods los indices e imprime su numero
                 Debug.Log("The number is " + i);
                 i++;
             }
@@ -82,33 +81,7 @@ public class week7Bloque1 : MonoBehaviour
 
     }
 
-    //primer menu simple
 
-    private void menuSimple()
-    {
-
-        //mientras que el i sea menor q 10 --itera hasta llegar a 10
-        /*
-        do
-        {
-            Debug.Log(opcion[i]);
-
-            int i = 0;
-            if (opcion[i] >= 10)
-                Debug.Log("Presiona 1 para salir");
-            i++;
-        }
-
-        while (i < opcion.Count);
-*/
-
-    }
-
-
-
-    void Update()
-    {
-    }
 }
    
     
