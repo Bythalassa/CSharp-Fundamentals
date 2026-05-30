@@ -39,28 +39,5 @@ public class week7Bloquedos : MonoBehaviour
         }
     }
 
-    public void inventario()
-    {
-        {
-            //LLAMAR AL INDICE PARA IMPRIMIRLOS A TODOS = "show inventory " + inventary[2]
-            //Debug.Log( inventary[0], inventary[1], inventary[2]);
-            Debug.Log(item);
-            i++;
-
-
-            
-
-
-            //item si el indice es 0 entonces debugeo el inventory[0], si 
-
-
-        }
-    }
-
-
-    /*void Update()
-    {
-
-    }*/
 }
 
