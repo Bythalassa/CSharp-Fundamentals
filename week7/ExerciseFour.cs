@@ -19,63 +19,60 @@ public class cicloUno : MonoBehaviour
         enemigos.Add(GameObject.Find("enemyDPS"));
 
         wavesGenerator();
-
     }
-
-
     public void wavesGenerator()
     {
         bool waveOneSpawned = false;
         bool waveTwoSpawned = false;
         bool waveThreeSpawned = false;
-    
+
         int i = 0;
 
-        while (i == 0 )
+        while (i == 0)
         {
 
-            Debug.Log(enemigos[0]);
-            Debug.Log(enemigos[0]);
-            Debug.Log(enemigos[0]);
+            Debug.Log(enemigos[0].name);
+            Debug.Log(enemigos[0].name);
+            Debug.Log(enemigos[0].name);
 
             if (waveOneSpawned == false)
             {
                 Debug.Log("Horda 1 ha aparecido");
                 waveOneSpawned = true;
 
-                 i++ ;
+                i++;
             }
         }
 
         while (i == 1 && waveOneSpawned == true)
         {
 
-            Debug.Log(enemigos[1]);
-            Debug.Log(enemigos[1]);
-            Debug.Log(enemigos[1]);
+            Debug.Log(enemigos[1].name);
+            Debug.Log(enemigos[1].name);
+            Debug.Log(enemigos[1].name);
 
             if (waveTwoSpawned == false)
             {
                 Debug.Log("Horda 2 ha aparecido");
                 waveTwoSpawned = true;
 
-                 i++ ;
+                i++;
             }
         }
 
         while (i == 2 && waveTwoSpawned == true)
         {
 
-            Debug.Log(enemigos[2]);
-            Debug.Log(enemigos[2]);
-            Debug.Log(enemigos[2]);
+            Debug.Log(enemigos[2].name);
+            Debug.Log(enemigos[2].name);
+            Debug.Log(enemigos[2].name);
 
             if (waveThreeSpawned == false)
             {
                 Debug.Log("Horda 3 ha aparecido");
                 waveThreeSpawned = true;
 
-                i++ ;
+                i++;
             }
         }
 
