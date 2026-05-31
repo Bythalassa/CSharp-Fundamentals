@@ -3,10 +3,9 @@ using System;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using static cicloUno;
 using static UnityEditor.Progress;
 
-public class cicloUno : MonoBehaviour
+public class enemySpawner : MonoBehaviour
 { //block 4
 
     public List<GameObject> enemigos = new List<GameObject>();
@@ -20,6 +19,7 @@ public class cicloUno : MonoBehaviour
 
         wavesGenerator();
     }
+
     public void wavesGenerator()
     {
         bool waveOneSpawned = false;
