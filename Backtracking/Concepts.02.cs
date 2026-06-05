@@ -1,3 +1,7 @@
+/*
+
+using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
@@ -25,6 +29,27 @@ using UnityEngine.InputSystem;   //← necesario para Keyboard.current
 4. Que me dices de las buenas practicas para esto : Mover el objeto en el espacio basado en los valores capturados por el input
 5. Ademas de crear direccion con vector3. dir . normalized * radius * speed * time --> Que otros eventos basicos puedo crear para mi plazer y para mi enemy:
  */
+/*
+
+public enum Status //etiquetas de asignación para la lista de entidades. 
+{
+    None,
+    Alive,
+    Defeat,
+}
+
+[Serializable]
+public struct Entity 
+{
+    public string EntityName;
+    public Status myStatus;
+
+    public Entity(string entityName, Status status)
+    {
+        EntityName = entityName;
+        this.myStatus = status;
+    }
+}
 
 public class backtracking : MonoBehaviour
 {
@@ -60,6 +85,7 @@ public class backtracking : MonoBehaviour
             Debug.Log("E soltado");
         }
     }*/
+/*
 
     private bool VerifyInteractuar() //bool necesario para verificar estructura ifs
     {
@@ -117,3 +143,4 @@ public class backtracking : MonoBehaviour
 
 
 }
+*/
