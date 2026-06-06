@@ -26,28 +26,17 @@ Seleccionar Both
 2. Si el jugador esta fuera del radio de detección establecido en el circle collider se mantiene en null 
 3. Sino debugea recogiste fuego
 4. Destruye el objeto y cambia el estado del item cercano a null. asi podra iterar en otro objeto de null a true.
-
-** agregar delay para que el evento sea más suave
-
-**Cinco: Logica RegistrarItemCercano: 
-
-
-
-
-**Seis: EliminarItemCercano:
-
-
-
+// PlayerInteraccion.cs
+// add Rigidbody to player and set it to "Is Kinematic" when you create player movement script.SS
+//3. Add this script to the object
 */
-
-
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerInteraccion : MonoBehaviour
 {
     private ItemInteractuable itemCercano;
+    public int fuegoCargado = 0;
 
     void Update()
     {
@@ -57,10 +46,10 @@ public class PlayerInteraccion : MonoBehaviour
     private void LeerInteraccion()
     {
         if (Keyboard.current.eKey.wasPressedThisFrame)
-            IntentarRecogerItem();
+           RecogerItem();
     }
 
-    private void IntentarRecogerItem()
+    private void RecogerItem()
     {
         if (itemCercano == null)
         {
@@ -69,6 +58,10 @@ public class PlayerInteraccion : MonoBehaviour
         }
 
         Debug.Log("recogiste: objeto de fuego");
+        fuegoCargado += itemCercano.valor; 
+        //el valor es la propiedad creada a la clase de ItemInteractuable
+        //cada carga vale x1 = 3 (suma y asigna el valor)
+
         Destroy(itemCercano.gameObject);
         itemCercano = null;
     }
@@ -76,11 +69,17 @@ public class PlayerInteraccion : MonoBehaviour
     public void RegistrarItemCercano(ItemInteractuable item)
     {
         itemCercano = item;
+        //ItemInteractuable es trigger y avisa al target/player mediante la función OnTrigger
+        //asigna un valor al ItemCercano como item
+        //La Logica RecogerItem cambia el valor a null
+        //La Logica de EliminarItemCercano cambia el valor a null apesar de no haber sido destruido. 
     }
 
     public void EliminarItemCercano(ItemInteractuable item)
     {
         if (itemCercano == item)
             itemCercano = null;
+        // fuerza un null al ejecutar el metodo OnTriggerExit2D
     }
 }
+
