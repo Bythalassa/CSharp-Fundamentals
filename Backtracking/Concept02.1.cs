@@ -69,10 +69,8 @@ public class PlayerInteraccion : MonoBehaviour
     public void RegistrarItemCercano(ItemInteractuable item)
     {
         itemCercano = item;
-        //ItemInteractuable es trigger y avisa al target/player mediante la función OnTrigger
-        //asigna un valor al ItemCercano como item
-        //La Logica RecogerItem cambia el valor a null
-        //La Logica de EliminarItemCercano cambia el valor a null apesar de no haber sido destruido. 
+        // la función OnTriggerEnter envia el valor del Objeto con Script ItemInteractuable hacia este script
+        // para guardarlo como item (salida) = true .  
     }
 
     public void EliminarItemCercano(ItemInteractuable item)

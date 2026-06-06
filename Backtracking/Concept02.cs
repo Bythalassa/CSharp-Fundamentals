@@ -7,7 +7,6 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
-
 public class ItemInteractuable : MonoBehaviour
 {
     public int valor = 3;
@@ -22,7 +21,8 @@ public class ItemInteractuable : MonoBehaviour
         //el objeto que entró a MI zona tiene el script PlayerInteraccion? 
 
         if (jugador != null) // Si el jugador SÍ tiene el script 
-            jugador.RegistrarItemCercano(this); //se asigna la entrada de la función RegistrarItemCercano como this
+            jugador.RegistrarItemCercano(this); //llama a RegistrarItemCercano
+                                                //y le manda este item (this = yo mismo = Objeto con script ItemInteractuable).
     }
 
     void OnTriggerExit2D(Collider2D isPlayer)
@@ -30,7 +30,6 @@ public class ItemInteractuable : MonoBehaviour
         var jugador = isPlayer.GetComponent<PlayerInteraccion>();
         if (jugador != null)
             jugador.EliminarItemCercano(this);
-
-
+        // al detectar el metodo : jugador fuera del radio, el objeto se vuelve a enviar.
     }
 }
